@@ -91,7 +91,7 @@ void checkAsc(int a[],int n){
 	}
 
 	if(isAsc){
-		cout<<"Day tang";
+		cout<<"Array ascending";
 	}
 }
 
@@ -105,7 +105,7 @@ void checkDesc(int a[],int n){
 	}
 
 	if(isDesc){
-		cout<<"Day giam";
+		cout<<"Array descending";
 	}
 }
 
