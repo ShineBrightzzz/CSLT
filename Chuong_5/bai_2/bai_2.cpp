@@ -5,7 +5,7 @@ using namespace std;
 
 void nhapMang(int a[],int &n){
 	cin>>n;
-	while(n<=0){
+	while(n<=0||n>MAX){
 		cin>>n;
 	}
 	for(int i=0;i<n;i++){
