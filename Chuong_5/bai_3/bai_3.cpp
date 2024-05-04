@@ -42,6 +42,10 @@ void sumPrime(int a[],int n){
  				break;
  			}
  		}
+ 		if(a[i]==0||a[i]==1){
+ 			isPrime = false;
+ 		}
+
  		if(isPrime==true){
  			sum+=a[i];
  		}

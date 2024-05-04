@@ -45,6 +45,7 @@ void checkOddEven(int a[],int n){
  void checkPrime(int a[],int n){
  	bool isPrime = true;
  	for(int i=0;i<n;i++){
+ 		
  		for(int j=2;j<a[i];j++){
  			if(a[i]%j==0){
  				isPrime = false;
@@ -52,7 +53,7 @@ void checkOddEven(int a[],int n){
  			}
  		}
  	}
-
+ 	
  	if(isPrime){
  		cout<<"Prime"<<endl;
  	}else{
