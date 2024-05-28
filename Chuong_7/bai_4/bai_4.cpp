@@ -16,19 +16,21 @@ void print(char s[]){
 	}
 }
 
-void upper(char s[]){
-	for (int i = 0; i < strlen(s); ++i)
-	{
-		if(s[i]<='z' && s[i]>='a'){
-			s[i] = s[i] - 32;
+
+int wordCount(char s[]){
+	int count=(s[0] != ' ');
+	for(int i=0;i<strlen(s)-1;i++){
+		if(s[i]==' '|| s[i]=='\t' || s[i]=='\n'){
+			if(s[i+1]!=' '&& s[i+1]!='\t' && s[i+1]!='\n')
+				++count;
 		}
 	}
+	return count;
 }
 
 
 int main(){
 	char s[MAX];
 	input(s);
-	upper(s);
-	print(s);
+	cout<<wordCount(s);
 }

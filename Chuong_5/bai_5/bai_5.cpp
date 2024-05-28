@@ -1,5 +1,8 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <climits>
+=======
+>>>>>>> 0066dad836f719347708659766ead4b8b01e1c1d
 #define MAX 100
 
 using namespace std;
@@ -19,6 +22,7 @@ void printArray(int a[],int n){
 	for(int i=0;i<n;i++){
 		cout<<a[i]<<" ";
 	}
+<<<<<<< HEAD
 }
 
 bool checkPrime(int n){
@@ -61,5 +65,48 @@ int main(){
 	inputArray(a,n);
 
 	printArray(a,n);
+=======
+	cout<<endl;
+}
+
+void seperate(int a[], int b[], int c[], int n, int &nb, int &nc) {
+    int lb = 0, lc = 0;
+    for (int i = 0; i < n; ++i) {
+        if (a[i] > 0) {
+            b[lb] = a[i];
+            ++lb;
+        } else {
+            c[lc] = a[i];
+            ++lc;
+        }
+    }
+    nb = lb;
+    nc = lc;
+}
+
+void sort(int a[],int d[],int n,int &nd){
+	int l =0;
+	for(int i=0;i<n;i++){
+		if(a[i]>0) d[l] =  a[i];++l;
+		if(a[i]<0) d[l] = a[i];++l;
+		if(a[i]=0) d[l] = a[i];++l;
+	}
+	nd =l;
+}
+
+int main(){
+	int n;
+	int nb=1,nc=1,nd=1;
+	int a[MAX];
+	int b[nb];
+	int c[nc];
+	int d[nd];
+	inputArray(a,n);
+	seperate(a,b,c,n,nb,nc);
+	printArray(b,nb);
+	printArray(c,nc);
+	sort(a,d,n,nd);
+	printArray(d,n);
+>>>>>>> 0066dad836f719347708659766ead4b8b01e1c1d
 }	
 
