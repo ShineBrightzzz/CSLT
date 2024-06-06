@@ -13,6 +13,9 @@ void print(char s[]){
 	for (int i = 0; i < strlen(s); ++i)
 	{
 		cout<<s[i];
+		if(s[i]==' '){
+			cout<<endl;
+		}
 	}
 }
 
